@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 16,
+    "files.associations": {
+        "xloctime": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "system_error": "cpp",
+        "xlocale": "cpp",
+        "cmath": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

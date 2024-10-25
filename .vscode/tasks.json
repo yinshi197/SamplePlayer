@@ -1,0 +1,51 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build, 编译",
+            "command": "D:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-ID:/FFmpeg/ffmpeg-7.0-fdk_aac/include",   //头文件
+                "-LD:/FFmpeg/ffmpeg-7.0-fdk_aac/lib",       //库文件
+                "-lavcodec",                                //库名
+                "-lavutil",
+                "-lavformat",
+                "-lswresample",
+                "-ID:/FFmpeg/SDL-release-2.30.6/build64/include",   //头文件
+                "-ID:/FFmpeg/SDL-release-2.30.6/build64/include/SDL2",
+                "-Dmain=SDL_main",
+                "-LD:/FFmpeg/SDL-releaL-release-2.30.6/build64/lib",    //库文件
+                "-lmingw32",            //库名
+                "-lSDL2main",
+                "-lSDL2",
+                //"-mwindows" //SDL使用该选项会屏蔽控制台输出
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。",
+            
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new", //这里shared表示共享，改成new之后每个进程创建新的端口
+                "showReuseMessage": true,
+                "clear": false
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
