@@ -58,4 +58,6 @@
 
 音视频同步效果和声音调节效果
 
+参考：assets目录下的`演示视频.mp3`
+
 <video src="./assets/演示视频.mp4"></video>
