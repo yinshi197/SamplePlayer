@@ -1,4 +1,4 @@
-# SamplePlayer
+# SimplePlayer
 
 基于FFmpeg 和 SDL 实现的简单播放器。支持播放多种格式的音视频文件。
 
